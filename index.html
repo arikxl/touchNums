@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק המספרים</title>
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+</head>
+
+<body onload="init()">
+    <p class="title">לחצו על המספרים לפי הסדר</p>
+    <div class="buttons">
+        <button onclick="playGame(100)">מטורף</button>
+        <button onclick="playGame(36)">קשה</button>
+        <button onclick="playGame(25)">בינוני</button>
+        <button onclick="playGame(16)">קל</button>
+    </div>
+    <div class="timer">0.00</div>
+    <div class="next-num"> <span>1</span>  :המספר הבא </div>
+    <div class="win-msg"> !ניצחון </div>
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
