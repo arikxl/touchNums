@@ -1,10 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to right, darkblue, blue, lightblue);
     color: white;
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0;
     font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
+    width:100vw;
+    height:100vh;
 }
 
 p {
@@ -18,12 +25,13 @@ p {
     text-align: center;
     margin-bottom: 20px;
     display: flex;
-    margin-left: 500px;
+    justify-content: center;
 }
 
 button{
     font-family: 'Varela Round', sans-serif;    width: 60px;
     height: 30px;
+    /* width: 100px; */
     border-radius: 20px;
     margin: 5px;
     border:0.16em solid rgba(255,255,255,0);
@@ -67,11 +75,13 @@ table {
     align-content: center;
     cursor: pointer;
     position: relative;
-    display: grid;
-    padding-left: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .board{
+    display: grid;
+    justify-content: center;
     border: 1px solid white;
     border-radius: 3%;
     text-align: center;
@@ -79,7 +89,7 @@ table {
 }
 
 .cell {
-    font-size: 20px;
+    font-size: 1rem;
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, 0.7);
@@ -89,9 +99,19 @@ table {
     width: 30px;
     height: 30px;
     position: flex;
-    padding: 10px;
+    padding: auto;
+    justify-content: space-around;
 }
 
 .cell:hover {
     background-color: rgba(255, 255, 255, .9);
+}
+
+
+@media (max-width: 440px) {
+    p {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
 }
